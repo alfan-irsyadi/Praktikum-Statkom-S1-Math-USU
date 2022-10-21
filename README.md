@@ -1,4 +1,5 @@
-# Praktikum Statistika Komputasi S1 Matematika## R4
+# Praktikum Statistika Komputasi S1 Matematika
+## R4
 ### 20-016 - Irsyad Baihaqi Lubis
 *Files:*
 1. https://raw.githack.com/alfan-irsyadi/Praktikum-Statkom-S1-Math-USU/main/R4/20-016%20Irsyad%20Baihaqi%20Lubis/Pertemuan_4_Irsyad%20Baihaqi%20Lubis_200803016.nb.html
