@@ -1,0 +1,50 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Rizky Ramadhan Tampubolon
+
+NIM : 200803046
+
+# x = as.double(readline('masukkan nilai x :'))
+# setiap menampilkan data dengan readline, akan menampilkan data bertipe string atau tipe data yang memakai tanda kutip 2
+# untuk menampilkan berupa data angka, menggunakan fungsi as.double, karena data angka bertipe double
+
+```{r}
+x = 123
+if (x%%2 == 0){
+print('Genap')
+}else {
+print ('Ganjil')
+}
+if(x>0){
+  print('positif')
+}else if(x == 0){
+  print('netral')
+}else {
+  print('negatif')
+}
+```
+
+# Looping / perulangan
+```{r}
+for(i in seq(2,15,2)){
+  print(i)
+}
+for(i in 1:15){
+  print (i)
+}
+```
+
+```{r}
+for (i in (1:100))
+  if (i%%2==0){
+    cat(i, "\t = Genap\n")
+  }else 
+    cat(i,'\t = Ganjil\n' )
+    
+
+```
+
+

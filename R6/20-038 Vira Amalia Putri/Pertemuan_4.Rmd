@@ -1,0 +1,50 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama: Vira Amalia Putri
+
+NIM: 200803038
+
+# Struktur Keputusan
+
+```{r}
+x = as.double(readline("masukkan nilai x: "))
+if(x%%2 == 0){
+  print('Genap')
+} else{
+  print('Ganjil')
+}
+if(x>0){
+  print('positif')
+} else if (x == 0){
+  print('netral')
+}else{
+  print('negatif')
+}
+```
+
+# Looping/Perulangan
+
+```{r}
+for(i in seq(2,15,2)){
+  print(i)
+}
+for(i in 1:15){
+  print(i)
+}
+```
+
+```{r}
+for(i in 1:100){
+  if (i%%2 == 0){
+  cat(i, "\t= Genap\n")
+    #bisa paake:
+    #print(sprintf("%d = genap", i))
+    #print(paste0(i, " = genap))
+} else{
+   cat(i, "\t= Ganjil\n")
+}
+}
+```

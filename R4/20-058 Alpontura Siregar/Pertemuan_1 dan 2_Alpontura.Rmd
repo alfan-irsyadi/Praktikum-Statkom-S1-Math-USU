@@ -1,0 +1,68 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+# Pertemuan 1
+
+## Assignment
+
+Dalam R kita bisa membuat atau mendefinisikan sebuah variabel dengan assignment sebagai berikut:
+
+```{r}
+a=1;
+a<-1;
+1->a;
+print(a)
+```
+
+**Vector**
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+```
+
+# Operator
+
+## Penjumlahan
+
+```{r}
+1+2;
+print(1+2)
+```
+
+## Pengurangan
+
+```{r}
+3-2;
+print(3-2)
+
+```
+
+## Perkalian
+
+```{r}
+5*3
+
+```
+
+```{r}
+1 && 1
+0 && 0
+2 && 3
+5 && -5
+F && F
+```
+
+```{r}
+1 || 1
+1 || -1
+-1 || -1
+-1 || 0
+0 || 0
+```
+
+```{r}
+
+```

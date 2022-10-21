@@ -1,0 +1,46 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+NAMA : ALPONTURA SIREGAR
+NIM  : 200803058
+
+# STRUKTUR KEPUTUSAN
+```{r}
+x=2
+if(x%%2==0){
+  print('Genap')
+}else{
+print('Ganjil')
+}
+
+x=12
+if(x>0){
+  print('Positif')
+}else if(x==0){
+  print('Netral')
+}else{
+  print('Negatif')
+}
+```
+# Looping/Perulangan
+```{r}
+for(i in 1:5){
+  print(i)
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+
+for(angka in 1:20){
+  if(angka%%2==0){
+  (print(sprintf("%d=Genap", angka))
+}else{
+print(sprintf("%d=Ganjil", angka))
+}
+}
+
+
+```
+

@@ -1,0 +1,58 @@
+---
+title: "pertemuan 4"
+output: html_notebook
+---
+
+Nama : Annov Jimmi Alex Purba
+
+Nim : 200803108
+
+# Struktur Keputusan
+```{r}
+# x = as.double(readline("masukkan nilai x : "))
+x = 123
+if(x%%2 == 0){
+  print('Genap')
+} else {
+  print('Ganjil')
+}
+if(x>0){
+  print('positif')
+} else if(x == 0){
+  print('netral')
+}else{
+  print('negatif')
+}
+```
+# looping / perulangan
+```{r}
+for(i in seq(2,15,2)){
+  print(i)
+}
+
+for(i in 1:15){
+  print (i)
+}
+
+print(sprintf("%d = ganjil",i))
+cat(1, " = ganjil\n")
+print(paste0(1, " = ganjil"))
+```
+
+```{r}
+for(i in 1:100){
+  if(i %% 2== 0){
+  #print(sprintf("%3d = genap", i))
+   cat(i, "\t= Genap\n")
+  # print(paste0(i, " = Genap")) 
+  } else{
+  #  print(sprintf("%3d = ganjil",i))
+   cat(i, "\t= Ganjil\n")
+  # print(paste0(i, " = Ganjil"))
+    }  
+}
+
+
+```
+
+ 

@@ -1,0 +1,185 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama: Meily Maulida Asyiri
+
+NIM : 200803048
+
+# Pertemuan 1
+
+## Assignment
+
+dalam R kita bisa membuat variabel atau mendefinisikan sebuah variabel dengan assignment seperti berikut:
+
+```{r}
+a = 1;
+a<-1;
+1->a;
+print(a)
+```
+
+## Vector
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+```
+
+# Operator aritmatika
+
+## Penjumlahan
+
+```{r}
+x = 5;
+y = 2;
+print(x+y)
+```
+
+## Pengurangan
+
+```{r}
+x = 5;
+y = 2;
+print(x-y)
+```
+
+## Perkalian
+
+```{r}
+x = 5;
+y = 2;
+print(x*y)
+```
+
+## Pembagian
+
+```{r}
+x = 5;
+y = 2;
+print(x/y)
+```
+
+## Modulo (sisa bagi)
+
+```{r}
+x = 5;
+y = 2;
+print(x%%y)
+```
+
+## Operator Logika
+
+## AND (DAN)
+
+```{r}
+5 && 5
+1 && 0
+0 && 1
+0 && 0
+10 && 10
+-1 && 0
+T && T
+F && F
+
+```
+
+0 dianggap FALSE, sedangkan selain 0 dianggap TRUE
+
+## Or (ATAU)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+```
+
+dan menggunakan simbol `&&`
+
+## Pertemuan 3
+
+### Operator Perbandingan
+
+```{r}
+print(1 == 0) #apakah 1 sama dengan 0?
+print(1 != 0) #apakah 1 tidak sama dengan 0?
+print(1 > 0)  #apakah 1 lebih besar dari 0?
+print(1 >= 0) #apakah 1 lebih besar sama dengan 0?
+print(1 < 0)  #apakah 1 lebih kecil dari 0?
+print(1 <= 0) #apakah 1 lebih kecil sama dengan 0?
+```
+
+```{r}
+!(25 && -1) || ((19 > 9) && (0 || 1))
+```
+
+### Sequence dan Matrix
+
+```{r}
+barisan1 = 1:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1 == barisan2
+```
+
+```{r}
+barisan1 = 1:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1 == barisan2
+barisan3 = seq(1,10,2)
+print(barisan3)
+print(barisan3[4])
+```
+
+## Cara Mengambil Elemen Pada Vector
+
+```{r}
+print(barisan3)
+print(barisan3[4]) ## index 4 di barisan3 = 7
+print(barisan3[1]) ## index 4 di barisan3 = 1
+print(barisan3[c(3,4)]) ## index 3 dan 4 di barisan3 = 5 7
+print(barisan3[c(1,3,5)]) ## index 1 3 dan 5 di barisan3 = 1 5 9
+```
+
+```{r}
+barisan4 = seq(1,100,3)
+print(barisan4)
+```
+
+```{r}
+print(barisan4[seq(2,34,2)])
+```
+
+```{r}
+barisan4 = seq(1,100,3)
+print(barisan4)
+n = length(barisan4)
+print(n)
+print(barisan4[seq(2, n, 2)])
+```
+
+### Matriks
+
+```{r}
+data = c(20,30,40,50)
+print('by row = FALSE')
+matrix(data = data, nrow = 2, ncol = 2) ## nrow BANYAKNYA BARIS dan ncol BANYAKNYA KOLOM harus pakai faktor dari banyaknya data
+print('by row = TRUE')
+matrix(data = data, nrow = 2, ncol = 2, byrow = TRUE) ## byrow kalo TRUE dia disusun secara baris, kalo FALSE dia disusun secara kolom
+```
+
+```{r}
+barisan1 = 1:20
+matrix(x, nrow = 4, ncol = 5, byrow = TRUE) ## ini namanya position argumen, terserah mau letakinnya dimana mau nrow luan, atau ncol luan dengan syarat harus ada nama argumennya
+matrix(1:20,4,5,T) ## bisa dengan cara ini juga lebih singkat
+matrix(data = barisan1, nrow = 4, ncol = 5, byrow = TRUE)
+```
+
+```{r}
+
+```

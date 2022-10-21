@@ -1,0 +1,53 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Dewi Apriliana
+
+NIM  : 200803066
+
+# Struktur Keputusan
+```{r}
+x = as.double(readline("Masukkan nilai x : "))
+if (x%%2 == 0){
+  print ('Genap')
+}else {
+  print ('Ganjil')
+}
+
+if(x>0){
+  print('Positif')
+}else if(x == 0) {
+  print('Netral')
+}else {
+  print ('Negatif')
+}
+```
+# Looping / Perulangan
+```{r}
+for (i in seq(2,15,2)){
+  print(i)
+}
+
+for (i in 1:15){
+  if(i %% 2 == 0){
+    print(i)
+  }
+}
+print(sprintf("%d = ganjil",1))
+cat(1, " = ganjil\n")
+print(paste0(1, "= ganjil"))
+```
+```{r}
+for(angka in 1:50){
+  if(angka%%2 ==0 ){
+    print(sprintf("%2d = Genap",angka))
+  }else{
+    print(sprintf("%2d = Ganjil",angka))
+  }
+}
+```
+
+
+

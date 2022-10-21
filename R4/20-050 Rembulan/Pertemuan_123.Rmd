@@ -1,0 +1,184 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama: Rembulan Hartaty
+
+NIM : 200803050
+
+# Pertemuan 1
+
+## Assignment dalam R kita bisa membuat variable atau mendefenisikan sebuah variabel dengan assignment
+
+```{r}
+a = 1;
+a <- 1;
+1->a;
+print(a)
+```
+
+## vector
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+
+```
+
+# Pertemuan 2
+
+## Operator
+
+### Penjumlahan
+
+```{r}
+a<-3;
+b<-2;
+c<-a+b;
+print(c)
+
+```
+
+atau
+
+```{r}
+3+2
+```
+
+### Pengurangan
+
+```{r}
+a<-3;
+b<-2;
+c<-a-b;
+print(c)
+```
+
+```{r}
+3-2
+```
+
+### Perkalian
+
+```{r}
+a<-3;
+b<-2;
+c<-a*b;
+print(c)
+```
+
+### Pembagian
+
+```{r}
+a<-3;
+b<-2;
+c<-a/b;
+print(c)
+```
+
+```{r}
+4/2
+```
+
+## Modulo
+
+```{r}
+5%%2
+```
+
+## Operator Logika
+
+### AND(DAN)
+
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+10 && 0
+-1 && -1
+T && T
+F && F
+W && W
+```
+
+*0 dianggap FALSE/SALAH*
+
+*SELAIN 0 dianggap TRUE/ BENAR*
+
+*T = TRUE ; F = FALSE*
+
+*kalau hasil perkaliannya selain 0, maka true dan sebaliknya*
+
+### OR (ATAU)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+```
+
+*kalau hasil penjumlahannya selain 0, maka true dan sebaliknya*
+
+# PERTEMUAN 3
+
+## Operator Perbandingan
+
+```{r}
+print(1==0) #apakah 1 sama dengan 0
+print(1!=0) #apakah 1 tidak sama dengan 0
+print(1>0) #apakah 1 lebih besar dari 0
+print(1>=0) #apakah 1 besar dari atau sama dengan 0
+print(1<0) #apakah 1 lebih kecil dari 0
+print(1<=0) #apakah 1 kurang dari atau sama dengan 0
+ 
+```
+
+```{r}
+!(25 && -1) || ((19>9) && (0||1))
+```
+
+-   *!(25 && -1) dikerjakan terlebih dahulu*
+
+    *karena hasil kali 25 dan -1 tidak sama dengan 0, maka true. karena ada tanda ! (negasi), maka false*
+
+    *lalu kerjakan ((19\>9) && (0\|\|1))*
+
+### sequence dan matriks
+
+```{r}
+barisan1 = 1:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1==barisan2
+barisan3=seq(1,10,2)
+print(barisan3)
+```
+
+### cara mengambil elemen pada vektor
+
+```{r}
+
+barisan3=seq(1,10,2)
+print(barisan3)
+print(barisan3[4])  #ambil index 4 di barisan3 = 7
+print(barisan3[1])  #ambil index 1 di barisan3 = 1
+print(barisan3[c(3,4)])  #ambil index 3 dan 4 di barisan3 = 5 7
+print(barisan3[c(1,3,5)]) 
+```
+
+### menampilkan bilangan genap saja
+
+```{r}
+barisan4=seq(1,100,3)
+print(barisan4)
+n=length(barisan4)
+print(n)
+print(barisan4[seq(2,n,2)])
+print(barisan4[seq(1,n,2)])
+```
+
+*note : 34 itu jumlah n nya*

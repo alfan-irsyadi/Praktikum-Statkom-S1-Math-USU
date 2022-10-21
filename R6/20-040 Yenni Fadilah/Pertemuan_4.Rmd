@@ -1,0 +1,57 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Yenni Fadilah
+
+NIM : 200803040
+
+# Struktur Keputusan
+```{r}
+# x = as.double(readline("masukkan nilai x: "))
+x = 123
+if(x%%2 == 0){
+  print('Genap')
+}else{
+    print('Ganjil')
+  }
+if(x>0){
+  print('positif')
+}else if(x == 0){
+  print('netral')
+}else{
+print('negatif')
+}
+```
+# Looping / Perulangan
+```{r}
+for(i in seq(2,15,2)){
+  print(i)
+}
+for(i in 1:15){
+  print(i)
+}
+
+for(angka in 1:100)
+  if (angka %% 2 == 0){
+print(sprintf("%3d = genap", angka))
+    # cat(angka, "\t= Genap\n")
+    # print(paste0(angka, " = Genap"))
+  }else {
+      print(sprintf("%3d = ganjil" , i))
+    #cat(angka, "\t = Ganjil\n")
+    #print(paste0(angka, " = Ganjil"))
+  }
+
+```
+# y
+```{r}
+
+for(i in 1:100)
+  if (i%%2 == 0){
+print(sprintf("%d = adalah bilangan genap", i))
+  }else {
+      print(sprintf("%d = adalah bilangan ganjil" , i))
+  }
+```

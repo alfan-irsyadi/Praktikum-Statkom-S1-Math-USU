@@ -1,0 +1,69 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama: Adisty Putri Inayanti
+
+NIM: 200803002
+
+# Struktur Keputusan
+
+```{r}
+#x = 123
+
+#jika ingin input data, input akan ada di console
+x = as.double(readline("masukan nilai x = "))
+
+
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+
+if(x>0){
+  print('positif')
+}else if(x==0){
+ print('netral')
+}else{
+  print('negatif')
+}
+```
+Nb: wajib }else dan menggunakan tanda kurung kurawal
+
+# Looping / Perulangan
+```{r}
+for(i in 1:5){
+  print(i) 
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+
+for(i in seq(2,15,2)){
+  print(i) 
+}
+
+```
+```{r}
+for(i in 1:15){
+  if(i%%2 == 0){
+    print(sprintf("%d = ganjil", i))
+  } else{
+    print(sprintf('%d = bilangan ganjil',i))
+}
+}
+for (i in 1:5){
+  if(i%%2 == 0){
+  cat(i, "\t = genap\n")
+  }else{
+  cat(i, "\t = ganjil\n")
+}
+}
+cat(1, " = ganjil\n")
+print(paste0(1, " = ganjil"))
+
+```
+

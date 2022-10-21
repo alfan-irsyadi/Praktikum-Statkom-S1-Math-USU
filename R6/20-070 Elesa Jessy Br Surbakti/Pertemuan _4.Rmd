@@ -1,0 +1,59 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Elesa Jessy Br Surbakti
+
+NIM : 200803070
+
+# Struktur Keputusan
+
+```{r}
+# x = as.double(readline("masukkan nilai x : "))
+# fungsi readline membuat semua menjadi string
+x = 123
+if(x%%2 == 0){
+  print('Genap')
+} else{              # } dan else harus 1 baris
+  print('Ganjil')
+}
+if(x>0){
+  print('Positif')
+} else if(x == 0){
+  print('Netral')
+} else{
+  print('Negatif')
+}
+```
+
+# Looping / Perulangan
+
+```{r}
+for(i in seq(2,15,2)){   #awal 2, akhir 15, beda 2
+  print(i)
+}
+
+for(i in 1:15){
+  print(i)
+}
+```
+
+```{r}
+for(i in 1:100){
+  if(i%%2 == 0){
+  print(sprintf("%3d = Genap", i))    # %3d berfungsi supaya penempatan angka 3 digit (rapi)
+} else{              
+  print(sprintf("%3d = Ganjil", i))
+}
+}
+
+#cara lain:
+for(i in 1:100){
+  if(i%%2 == 0){
+  cat(i, "\t= Genap\n")
+} else{              
+  cat(i, "\t= Ganjil\n")
+}
+}
+```

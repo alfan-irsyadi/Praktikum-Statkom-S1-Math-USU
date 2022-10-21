@@ -1,0 +1,81 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama: Ricky
+
+Nim : 200803032
+
+# Struktur Keputusan
+```{r}
+x=123
+if(x%%2==0){
+  print('Genap')
+} else{
+print('Ganjil')
+}
+
+if(x>0){
+print('Positif')
+}else if(x==0){
+print('Netral')
+}else{
+print('Negatif')
+}
+```
+```{r}
+x=as.double(readline("Masukkan Nilai x : 5"))
+if(x%%2==0){
+  print('Genap')
+} else{
+print('Ganjil')
+}
+
+if(x>0){
+print('Positif')
+}else if(x==0){
+print('Netral')
+}else{
+print('Negatif')
+}
+```
+```{r}
+for(i in 1:5){
+  print(i)
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+```
+```{r}
+for(i in seq(2,15,2)){
+  print(i)
+}
+
+for(i in 1:15){
+  if(i%%2==0){
+    print(i)
+  }
+}
+```
+```{r}
+for (angka in 1:50){
+  if(angka%%2==0){
+   cat(angka,"\t = genap\n")
+  }else{
+   cat(angka,"\t = ganjil\n")
+  }
+}
+```
+```{r}
+for (angka in 1:50){
+  if(angka%%2==0){
+   print(sprintf("%2d = genap",angka))
+  }else{
+   print(sprintf("%2d = ganjil",angka))
+  }
+}
+```
+

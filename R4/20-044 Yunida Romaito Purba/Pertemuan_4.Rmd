@@ -1,0 +1,62 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+NAMA : YUNIDA ROMAITO PURBA
+NIM : 200803044
+    
+    # struktur Keputusan
+```{r}
+x = 1
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+```
+```{r}
+x = 123
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+```
+```{r}
+x = 2
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+```
+```{r}
+x = 12
+if(x>0){
+  print('positif')
+}else if(x == 0){
+  print('netral')
+  }else{
+    print('negatif')
+}
+```
+# Looping / Pengulangan 
+```{r}
+for(i in 1:5){
+  print(i)
+}
+for(i in c(2,4,6)){
+  print(i)
+}
+```
+```{r}
+for(angka in 1:20){
+  if(angka%%2 == 0){
+    print(sprintf("%d = genap",angka))
+  }else{
+    print(sprintf("%d = ganjil",angka))
+  }
+}
+```
+
+  

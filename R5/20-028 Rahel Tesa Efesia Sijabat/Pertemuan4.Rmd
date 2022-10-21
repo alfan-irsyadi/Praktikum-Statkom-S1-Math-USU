@@ -1,0 +1,50 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Rahel Tesa Efesia Sijabat NIM : 200803028
+
+#Struktur Keputusan
+
+```{r}
+# x = 123
+x = as.double(readline("Masukkan Nilai x : "))
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+
+if(x>0){
+  print('Positif')
+}else if(x == 0){
+  print('Netral')
+}else{
+  print('Negatif')
+}
+```
+
+# Looping / Perulangan
+
+```{r}
+for(i in 1:5){
+  print(i)
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+
+for(i in seq(2,15,2)){
+  print(i)
+}
+
+for(i in c(1:50)){
+  if(i %% 2 == 0){
+    cat(i, "\t= Genap\n")
+  }else{
+    cat(i, "\t= Ganjil\n")
+  }
+}
+```

@@ -1,0 +1,116 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama : Titin Miduk New Year
+
+NIM : 200803096
+
+# Pertemuan 1
+
+## Assignment
+
+Assignment adalah sebuah operasi yang digunakan unutk mendeklarasikan sebuah variabel chunk
+
+```{r}
+a = 1
+print(a)
+b <- 2
+print(b)
+3 -> c
+print(c)
+
+```
+
+## Vektor
+
+Vektor adalah dalam R bisa kita buat dengan menggunakan fungsi c() sebagai berikut
+
+```{r}
+vektor <- c(1, 2,3,4,5)
+print(vektor)
+
+```
+
+# Pertemuan 2
+
+## Operator Aritmatika
+
+### Penjumlahan
+
+```{r}
+5 + 2
+```
+
+### Pengurangan
+
+```{r}
+5-2
+```
+
+### Perkalian
+
+```{r}
+5*2
+```
+
+### Pembagian
+
+```{r}
+5/2
+```
+
+### Modulo (sisa bagi)
+
+```{r}
+5%%2
+```
+
+Perpangkatan
+
+```{r}
+5^2
+5&&3
+5&&-1
+```
+
+
+## Operator Logika
+## AND (DAN)
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+5 && 5
+-1 && -2
+T && T
+```
+0 dianggap FALSE SEDANGKAN SELAIN 0 DIANGGAP true
+dan juga True disingkat T dan False F
+trick untuk operator dan bisa gunakan perkalian untuk mengujinya
+
+## OR (ATAU)
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+2 || -2
+```
+trick untuk operator atau dan bisa gunakan penjumlahan untuk mengujinya dengan catatan bahwa setiap bilangan bulat yang lebih dari satu anggap sebagai satu (bernilai benar) meskipun dia itu negatif jadi tidak tergantung pada hasil operasinya
+
+## Negation ( Negasi)
+```{r}
+!0
+!1
+!25
+!-2
+```
+
+```{r}
+!(25&&0)||(25||(12&&0))
+
+```
+

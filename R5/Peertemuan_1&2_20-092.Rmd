@@ -1,0 +1,126 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama : Ruth Anggie Tambunan
+
+NIM : 200803092
+
+# Pertemuan 1
+
+## Assignment
+
+assigntment adalah sebuah operasi yang digunakan untuk membuat atau mendefinisikan sebuah variabel
+
+chunk
+
+```{r}
+a = 1
+print(a)
+b <- 2
+print(b)
+3 -> c
+print(c)
+```
+
+## Vector
+
+vector dalam R bisa kita buat dengan menggunakan fungsi c() seperti berikut :
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+```
+
+```{r}
+hai <- 'Nama saya Ruth \n Ini saya baru belajar membuat sebuah chunk hwhwe'
+print(hai)
+```
+
+# Pertemuan 2
+
+## Operator Aritmetika
+
+### Penjumlahan
+
+```{r}
+5+2
+```
+
+### Pengurangan
+
+```{r}
+5-2
+```
+
+### Pembagian
+
+```{r}
+5/2
+```
+
+### Perkalian
+
+```{r}
+5*2
+```
+
+### Modulo (Sisa Bagi)
+
+```{r}
+5 %% 2
+```
+
+### Perpangkatan
+
+```{r}
+5^2
+```
+
+# Operator Logika
+
+## And (Dan)
+
+```{r}
+1 && 1
+1 && 0 
+0 && 1
+0 && 0
+5 && 1
+-3 && 4
+6 && 0
+T && F
+T && 0
+T && T
+```
+
+0 dianggap FALSE, sedangkan selain dari 0 itu dianggap TRUE
+
+T=TRUE
+
+F = FALSE
+
+## OR (Atau)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+-2 || 2
+
+```
+
+## Negation (Negasi)
+
+```{r}
+!1
+!0
+!3
+!-3
+```
+
+```{r}
+!(1)
+```

@@ -1,0 +1,208 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+```{r}
+
+```
+
+Nama : Monalisa
+
+NIM : 200803022
+
+# Pertemuan 1
+
+## Assignment
+
+Assignment adalah suatu operasi yang digunakan untuk membuat atau mendefinisikan sebuah variabel.
+
+```{r}
+a = 1
+print(a)
+b <- 2
+print(b)
+3 -> c
+print(c)
+```
+
+## Vector
+
+Vektor bisa kita buat dengan cara menggunakan fungsi c() seperti berikut:
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+```
+
+# Pertemuan 2
+
+## Operator Aritmatika
+
+### Pejumlahan
+
+```{r}
+5+2
+```
+
+### Pengurangan
+
+```{r}
+5-2
+```
+
+### Perkalian
+
+```{r}
+5*2
+```
+
+### Modulo (sisa bagi)
+
+```{r}
+5%%2
+```
+
+### Pembagian
+
+```{r}
+5/2
+```
+
+### Pangkat
+
+```{r}
+5^2
+```
+
+## Operator Logika
+
+### And (dan)
+
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+5 && 5
+5 && 3
+5 && 0
+T && T
+F && T
+T && F
+F && F
+
+```
+
+0 dianggap SALAH/FALSE, sedangkan selain 0 dianggap benar
+
+T = TRUE
+
+F = FALSE
+
+### Or (Atau)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+-3 || 2
+0 || -1
+-1 || 1
+-2 || 2
+
+```
+
+### Negasi (Negation)
+
+```{r}
+!1
+!0
+!5
+!-5
+!(1&&25)||(24 || (12&&0))
+!(1&&25)||(0 || (12&&0))
+```
+# Pertemuan 3
+## Operator Perbandingan
+```{r}
+print(1 == 0) #apakah 1 sama dengan 0?
+print(1 != 0) #apakah 1 tidak sama dengan 0?
+print(1 > 0)  #apakah 1 lebh besar dari 0?
+print(1 >= 0) #apakah 1 lebih besar atau sama dengan 0?
+print(1 < 0)  #apakah 1 lebih kecil dari 0?
+print(1 <= 0) #apakah 1 lebih keci sama dengan 0?
+
+```
+```{r}
+!(25 && -1)||((19 > 9) && (0||1))
+```
+### Sequence dan Matrix
+```{r}
+barisan1 = 1:10 #1:2:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1 == barisan2
+barisan3 = seq(1,10,2)
+print(barisan3)
+```
+```{r}
+barisan = seq(1,13,3)
+print(barisan)
+```
+### Cara Mengambil Elemen Pada Vector
+```{r}
+barisan1 = 1:10 #1:2:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1 == barisan2
+barisan3 = seq(1,10,2)
+print(barisan3)
+print(barisan3)
+print(barisan3[4])       #indeks 4 di barisan 3 = 7?
+print(barisan3[1])       #indeks 1 di barisan 3 = 1?
+print(barisan3[c(3,4)])  #indeks 3 dan 4 di barisan 3 = 5 dan 7?
+```
+
+
+```{r}
+barisan = seq(2,97,5)
+print(barisan)[3]
+```
+```{r}
+seq(2,97,5)
+a = seq(2,97,5)
+length(a)
+
+```
+```{r}
+seq(2,97,5)
+a = seq(2,97,5)
+print(a)[c(3,4)]
+
+```
+```{r}
+a = seq(1,100,3)
+print(a)
+seq(2,100,6) #cara pertama
+a%%2    #cara kedua
+a %% 2 == 0
+a[a %% 2 == 0]
+```
+```{r}
+a = seq(1,100,3)
+seq(22,100,3) 
+```
+```{r}
+a = seq(1,100,3)
+seq(22,100,6)       #cara pertama
+a >= 22             #cara kedua
+a[a >= 22]
+```
+
+
+
+
+

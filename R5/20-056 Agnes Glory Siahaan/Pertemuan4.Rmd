@@ -1,0 +1,80 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Agnes Glory Siahaan
+
+Nim : 200803056
+
+#Struktur Keputusan
+
+```{r}
+x = 123
+x = as.double(readline("Masukkan nilai x:"))
+if(x%%2 == 0){
+  print('Genap')
+} else{
+  print('Ganjil')
+}
+
+if (x>0){
+  print('Positif')
+} else if (x == 0){
+  print('Netral')
+} else{
+  print('negatif')
+}
+```
+
+# Looping/ Perulangan
+
+```{r}
+for(i in 1:5){
+  print(i)
+}
+for(i in c(2,4,6)){
+  print(i)
+}
+```
+
+```{r}
+for(i in 1:50){
+  if (i%%2 == 0){
+    print(sprintf("%2d = genap",i))
+    cat(i, "Genap\n")
+    print(paste0(i, " = genap"))
+  }else {
+    print(sprintf("%2d = ganjil",i))
+    cat(i, "Ganjil\n")
+    print(paste0(i, " = ganjil")) 
+  }
+}
+ 
+```
+
+```{r}
+for(i in 1:50){
+  if (i%%2 == 0){
+    print(sprintf("%2d = genap",i))
+  }else {
+    print(sprintf("%2d = ganjil",i))
+  }
+}
+ 
+```
+
+```{r}
+for(i in 1:50){
+  if (i%%2 == 0){
+    print(sprintf("%2d = genap",i))
+    cat(i, "\t= Genap\n")
+    print(paste0(i, " = genap"))
+  }else {
+    print(sprintf("%2d = ganjil",i))
+    cat(i, "\t= 
+        Ganjil\n")
+    print(paste0(i, " = ganjil")) 
+  }
+}
+```

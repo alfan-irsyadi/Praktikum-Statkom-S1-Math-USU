@@ -1,0 +1,56 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama : Titin Miduk New Year Purba
+
+NIM : 200803096
+
+# Struktur Keputusan
+```{r}
+x = 123
+if(x %%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+
+if(x>0){
+  print('positif')
+} else if(x==0){
+  print('netral')
+}else{
+  print('negatif')
+}
+``` 
+
+# Looping/Perulangan
+```{r}
+for(i in 1:5){
+  print(i)
+}
+for(i in seq(2,15,2)){
+  print(i)
+}
+
+for (i in c(2,4,6)){
+   print(i)
+} 
+```
+```{r}
+for(i in 1:50){
+  if(i %%2 == 0){
+    print(sprintf("%2d =genap", i))
+    cat(i, "\t=genap\n")
+    print(paste0(i, "=genap"))
+  }else{
+    print(sprintf("%2d =ganjil", i))
+    cat(i, "\t=ganjil\n")
+    print(paste0(i, "=ganjil"))
+  }
+}
+```
+
+
+

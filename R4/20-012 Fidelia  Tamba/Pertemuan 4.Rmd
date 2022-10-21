@@ -1,0 +1,54 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Fidelia Aprilia Emelia Tamba
+NIM  : 200803012
+ 
+#Struktur Keputusan
+```{r}
+x = 123
+if (x %% 2 == 0 ){
+  print('GENAP')
+}else{
+  print('Ganjil')
+  
+}
+```
+
+```{r}
+x = 12
+if (x>0){
+  print ('Positif')
+} else if (x ==0){
+print ( 'netral ')
+}else{
+  print ('negatif')
+}
+```
+# Looping/Perulangan
+```{r}
+for (i in 1:5){
+  print (i)
+}
+```
+
+```{r}
+for (i in c (2,3,4)){
+  print (i)
+}
+```
+
+```{r}
+for (x in 1:20){
+
+  if (x %% 2 == 0 ){
+  print(sprintf("%d = GENAP" , x))
+  
+}else{
+  print(sprintf("%d = Ganjil", x))
+}
+}
+```
+

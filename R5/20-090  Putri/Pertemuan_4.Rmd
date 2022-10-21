@@ -1,0 +1,66 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama: Putri Perbina S Br Barus NIM: 200803090
+
+# Struktur Keputusan
+
+```{r}
+x = 123 
+x = as.double(readline("masukkan nilai x : "))
+if(x%%2 == 0){
+  print('Genap')
+}else{ 
+  print('Ganjil')
+}
+if(x>0){ 
+  print('positif')
+}else if(x == 0){
+  print('netral')
+}else{
+  printf('negatif')
+}
+
+```
+
+# Looping / Perulangan
+
+```{r}
+for(i in 1:5){
+  print(i)
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+
+for(i in seq(2,15,2)){
+  print(i)
+}
+
+```
+
+e```{r}
+for(x in 1:50)
+if(x%%2 == 0){
+  cat(x,"\t= Genap\n")
+} else{
+ cat(x,"\t= Ganjil\n")
+}
+
+for(x in 1:50)
+if(x%%2 == 0){
+  print(sprintf("%2d = genap", x))
+} else{
+ print(sprintf("%2d = ganjil", x))
+}
+
+for(x in 1:50)
+if(x%%2 == 0){
+  print(paste0(x, " = genap"))
+} else{
+ print(paste0(x, " = ganjil"))
+}
+```

@@ -1,0 +1,69 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+NAMA : Rembulan Hartaty NIM : 200803050
+
+# struktur keputusan
+
+### menentukan ganjil genap
+
+```{r}
+x = 3
+if(x%%2==0){
+  print('Genap')
+} else{
+   print('Ganjil')
+}
+```
+
+```{r}
+x = 10
+if(x%%2!=0){
+  print('Ganjil')
+} else{
+   print('Genap')
+}
+```
+
+### menentukan positif,negatif,nol
+
+```{r}
+x = -2
+if(x>0){
+  print('Positif')
+} else if(x==0) {
+  print('netral')
+  }else{
+   print('Negatif')
+}
+```
+
+# Perulangan (Looping)
+
+```{r}
+for (i in 1:5){
+  print(i)
+}
+```
+
+```{r}
+for (i in c(2,4,6)){
+  print(i)
+}
+```
+
+```{r}
+for (i in 1:20)
+if(i%%2==0){
+  print(sprintf("%d = Genap",i))
+} else{
+    print(sprintf("%d = Ganjil",i))
+}
+
+```
+
+sprintf perlu pake print
+
+sprintf membuat string dengan format tertentu dn di print dengan print

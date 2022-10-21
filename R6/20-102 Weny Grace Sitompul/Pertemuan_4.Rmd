@@ -1,0 +1,39 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Weny Grace Sitompul
+
+NIM : 200803102
+```{r}
+x =  as.double(readline("Masukkan nilai x = "))
+print(x)
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+if(x>0){
+  print('positif')
+}else if (x == 0){
+  print('Netral')
+}else{
+  print('negatif')
+}
+```
+# Looping/Perulangan
+```{r}
+for(i in 1:100){
+  if(i %% 2 == 0){
+    #print(sprintf("%3d = genap",i))
+    #cat(i, "\t = Genap\n")
+    print(paste0(i, " = Genap"))
+  }else{
+    #print(sprintf("%3d = ganjil",i))
+    #cat(i, "\t = Ganjil\n")
+    print(paste0(i, " = Ganjil"))
+  }
+}
+```
+

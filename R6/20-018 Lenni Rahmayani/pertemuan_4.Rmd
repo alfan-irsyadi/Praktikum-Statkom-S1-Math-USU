@@ -1,0 +1,51 @@
+---
+title: "pertemuan 4"
+output: html_noteboo
+---
+
+Nama : Lenni Rahmayani
+
+NIM : 200803018
+
+# Struktur Keputusan
+
+```{r}
+x = 123
+if(x%%2 == 0){
+  print('genap')
+} else {
+  print('ganjil')
+}
+
+
+if (x > 0){
+  print('positif')
+}else if(x == 0){
+  print('netral')
+}else {
+  print('negatif')
+}
+
+```
+
+# Looping/ Perulangan
+
+```{r}
+for (i in seq (2, 15, 2)){
+  print(i)
+}
+
+for(i in 1:15){
+   print(i)
+}
+
+for (angka in 1 : 100){
+  if(angka%%2 == 0){
+    print(sprintf('%3d = genap', angka))
+    
+  }else {
+    print(sprintf('%3d = ganjil', angka))
+  }
+}
+```
+

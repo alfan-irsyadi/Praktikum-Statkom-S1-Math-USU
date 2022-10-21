@@ -1,0 +1,8 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+NAMA : Annisa Hertyani
+NIM  : 200803004
+
+#Struktur Keputusan

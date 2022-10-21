@@ -1,0 +1,89 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama : Muhammad Alfian
+
+NIM : 200803080
+
+# pertemuan 1 dan 2
+
+## Assigment
+
+dalam R kita bisa membuat variabel atau mendefenisikan sebuah variabel dengan assigment seperti berikut
+
+```{r}
+a =1;
+a <- 1;
+3 -> a;
+print(a)
+```
+
+## Vector
+
+```{r}
+vektor = c(123, 345)
+print(vektor[1])
+```
+
+## Operator Aritmatika
+
+### Penjumlahan
+
+```{r}
+5+2
+```
+
+### pengurangan
+
+```{r}
+5-2
+```
+
+### perkalian
+
+```{r}
+5*2
+```
+
+### pembagian
+
+```{r}
+5/2
+```
+
+### Modulo
+
+```{r}
+5%%2
+```
+
+## Operator Logika
+
+### Dan
+
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+10 && 10
+-1 && -1
+-1 && 0
+T && T
+T && F
+
+
+```
+
+0 dianggap "FALSE" sedangkan selain 0 dianggap "TRUE"
+
+### Atau
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+```

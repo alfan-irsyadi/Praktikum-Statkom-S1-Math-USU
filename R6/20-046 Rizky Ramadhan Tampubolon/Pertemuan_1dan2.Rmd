@@ -1,0 +1,121 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama : Rizky Ramadhan Tampubolon
+
+NIM : 200803046
+
+# Heading 1
+
+## Assigment
+
+Assigment adalah suatu operasi yang digunakan untuk membuat atau mendefenisikan sebuah variabel. Assigment bisa dibuat dengan 3 cara, yaitu dengan x = ; x \<- dan -\> x
+
+```{r}
+a = 1
+print (a)
+b <- 2
+print (b)
+3 -> c
+print (c)
+```
+
+```{r}
+vektor1 <- c(1,2,3,4,5)
+print(vektor1)
+```
+
+# Pertemuan 2
+
+## Operator Aritmatika
+
+### Penjumlahan
+
+### Penjumlahan
+
+```{r}
+5+2
+```
+
+#### Pengurangan
+
+```{r}
+5-2
+```
+
+### Perpangkatan
+
+```{r}
+5^2
+```
+
+### Operator logika
+
+### Pembagian
+
+```{r}
+5/2
+```
+
+### Perkalian
+
+```{r}
+5*2
+```
+
+### Sisa Bagi
+
+```{r}
+5%%2
+```
+
+### Operator Logika
+
+### And (Dan)
+
+```{r}
+1 && 1
+1 && 2
+2 && 2
+0 && 0
+
+```
+
+0 diartikan sebagia false, dan selain 0 dianggap true
+
+T = True
+
+F = False
+
+### Or ( Atau )
+
+```{r}
+1 || 1
+1||0
+0||1
+-1||-1
+0||0
+```
+
+### Negasi
+
+```{r}
+!1
+!0
+```
+
+```{r}
+!(1&&25)||(24||(12&&0))
+```
+
+## Matriks
+
+```{r}
+Angka = c(20,30,40,50)
+print('by row = False')
+matrix(data = Angka, nrow = 2, ncol = 2)
+print('byrow = True')
+matrix(data = Angka, nrow = 2 , ncol = 2, byrow = TRUE)
+```

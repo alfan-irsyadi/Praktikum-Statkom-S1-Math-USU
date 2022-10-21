@@ -1,0 +1,131 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Ruth Anggie Tambunan
+
+NIM : 200803092
+
+# Struktur Keputusan
+
+```{r}
+x = as.double(readline("Masukkan nilai x : "))
+
+if(x%%2 == 0){
+  print('Genap')
+}else {
+  print('Ganjil')
+}
+
+if(x>0){
+  print('positif')
+}else if (x ==0){
+  print('netral')
+}else{
+  print('negatif')
+}
+```
+
+-- contoh pribadi --
+
+```{r}
+print('Cek nilai')
+nilai = as.double(readline("Masukkan nilai : "))
+if(nilai < 100){
+  print("Wah kamu hebat!")
+}else if(nilai <70){
+  print("Hampir memuaskan! tetap belajar ya")
+}else if(nilai <50){
+  print("Fokus! ayo belajar lagi!")
+}else("Nilai apa ini?:)")
+```
+
+# Looping / Perulangan
+
+```{r}
+for(i in 1:5){
+  print(i)
+}
+
+for(i in c(2,4,6)){
+  print(i)
+}
+```
+
+-- contoh menampilkan nilai genap ganjil menggunakan 3 jenis format print --
+
+```{r}
+for(i in 1 : 50){
+  if(i%%2 == 0){
+    print(sprintf("%2d adalah genap",i))
+  }else{
+    print(sprintf("%2d adalah ganjil",i))
+  }
+}
+```
+
+```{r}
+for(i in 1 : 50){
+  if(i%%2 == 0){
+    cat(i," adalah genap\n")
+  }else{
+    cat(i," adalah ganjil\n")
+  }
+}
+```
+
+```{r}
+for(i in 1 : 50){
+  if(i%%2 == 0){
+    cat(i,"\t= genap\n")
+  }else{
+    cat(i,"\t= ganjil\n")
+  }
+}
+```
+
+```{r}
+for(i in 1 : 50){
+  if(i%%2 == 0){
+    print(paste0(i," adalah genap"))
+  }else{
+    print(paste0(i," adalah ganjil"))
+  }
+}
+
+
+
+```
+
+\-- Dicampur ke dalam 1 program
+
+```{r}
+for(i in 1 : 50){
+  if(i%%2 == 0){
+    print(sprintf("%2d adalah genap",i))
+    print(paste0(i," adalah genap"))
+    cat(i," adalah genap\n")
+    cat(i,"\t= genap\n")
+  }else{
+    print(sprintf("%2d adalah ganjil",i))
+    print(paste0(i," adalah ganjil"))
+    cat(i," adalah ganjil\n")
+    cat(i,"\t= ganjil\n")
+  }
+}
+```
+
+-- contoh pribadi --
+
+```{r}
+angka = as.double(readline("Masukkan angka : "))
+for(i in 1:angka){
+  print(i)
+  if(i%%2==0){
+    print("Aku cantik")
+  }else{
+    print("Aku cantik kalee")
+  }
+}
+```

@@ -1,0 +1,119 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+# Pertemuan 1
+
+## Assignment dalam R kita bisa membuat variable atau mendefenisikan sebuah variabel dengan assignment
+
+```{r}
+a = 1;
+a <- 1;
+1->a;
+print(a)
+```
+
+## vector
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+
+```
+
+# Pertemuan 2
+
+## Operator
+
+### Penjumlahan
+
+```{r}
+a<-3;
+b<-2;
+c<-a+b;
+print(c)
+
+```
+
+atau
+
+```{r}
+3+2
+```
+
+### Pengurangan
+
+```{r}
+a<-3;
+b<-2;
+c<-a-b;
+print(c)
+```
+
+```{r}
+3-2
+```
+
+### Perkalian
+
+```{r}
+a<-3;
+b<-2;
+c<-a*b;
+print(c)
+```
+
+### Pembagian
+
+```{r}
+a<-3;
+b<-2;
+c<-a/b;
+print(c)
+```
+
+```{r}
+4/2
+```
+
+## Modulo
+
+```{r}
+5%%2
+```
+
+## Operator Logika
+
+### AND(DAN)
+
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+10 && 0
+-1 && -1
+T && T
+F && F
+W && W
+```
+
+*0 dianggap FALSE/SALAH*
+
+*SELAIN 0 dianggap TRUE/ BENAR*
+
+*T = TRUE ; F = FALSE*
+
+*kalau hasil perkaliannya selain 0, maka true dan sebaliknya*
+
+### OR (ATAU)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+```
+
+*kalau hasil penjumlahannya selain 0, maka true dan sebaliknya*

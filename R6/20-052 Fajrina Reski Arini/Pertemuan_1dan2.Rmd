@@ -1,0 +1,171 @@
+---
+title: "Pertemuan 1 dan 2"
+output: html_notebook
+---
+
+Nama: Muhammad Alfan Irsyadi Hutagalung
+
+NIM : 190803102
+
+# Pertemuan 1
+
+## Assignment
+
+assignment adalah suatu operasi yang digunakan untuk
+
+membuat atau mendefinisikan sebuah variabel
+
+```{r}
+a = 1
+print(a)
+b <- 2
+print(b)
+3 -> c
+print(c)
+```
+
+## Vector
+
+vector bisa kita buat dengan cara menggunakan fungsi c() seperti berikut:
+
+```{r}
+vector1 <- c(1,2,3,4,5)
+print(vector1)
+```
+
+------------------------------------------------------------------------
+
+# Pertemuan 2
+
+## Operator Aritmatika
+
+### Penjumlahan
+
+```{r}
+5+2
+```
+
+### Pengurangan
+
+```{r}
+5-2
+```
+
+### Perkalian
+
+```{r}
+5*2
+```
+
+### Modulo (sisa bagi)
+
+```{r}
+5%%2
+```
+
+### Perpangkatan
+
+```{r}
+5^2
+```
+
+## Operator Logika
+
+### And (Dan)
+
+```{r}
+1 && 1
+1 && 0
+0 && 1
+0 && 0
+5 && 4
+-1 && -2
+T && T
+T && F
+```
+
+0 dianggap salah/FALSE, sedangkan selain 0 dianggap benar
+
+T = TRUE
+
+F = FALSE
+
+### Or (Atau)
+
+```{r}
+1 || 1
+1 || 0
+0 || 1
+0 || 0
+-1 || -1
+-1 || 0
+-2 || 2
+```
+
+### Negasi (Negation)
+
+```{r}
+!1
+!0
+!25
+```
+
+! (1 && 25) \|\| ( 24 \|\| (12 && 0 ))
+```{r}
+! (1 && 25) || ( 24 || (12 && 0 ))
+```
+# Pertemuan 3
+## Operator Perbandingan
+
+```{r}
+print(1 == 0) # apakah 1 sama dengan 0?
+print(1 != 0) # apakah 1 tidak sama dengan 0?
+print(1 > 0) # apakah 1 lebih besar dari 0?
+print(1 >= 0) # apakah 1 lebih besar atau sama dengan 0?
+print(1 < 0) # apakah 1 lebih kecil dari 0?
+print(1 <= 0) # apakah 1 lebih kecil atau sama dengan 0?
+```
+
+!(25 && -1) || ((19 > 9) && (0 || 1))
+```{r}
+!(25 && -1) || ((19 > 19) && (0 || 1))
+```
+
+### Sequence dan Matrix
+```{r}
+barisan1 = 1:10 # 1:2:10
+barisan2 = seq(1,10)
+print(barisan1)
+print(barisan2)
+barisan1 == barisan2
+barisan3 = seq(1,10,2)
+print(barisan3)
+```
+## cara mengambil elemen pada vector
+```{r}
+print(barisan3)
+print(barisan3[4]) ## index 4 di barisan3 = 7
+print(barisan3[1]) ## index 1 di barisan3 = 1
+print(barisan3[c(3,4)]) ## index 3 dan 4 di barisan3 = 5 7
+```
+```{r}
+barisan4 = seq(1,100,3)
+print(barisan4)
+n = length(barisan4)
+print(n)
+print(barisan4[seq(2, n, 2)])
+```
+
+### Matriks
+```{r}
+ANGKA = c(20,30,40,50)
+print('by row = FALSE')
+matrix(data = ANGKA, nrow = 2, ncol = 2)
+print('by row = TRUE')
+matrix(data = data, nrow = 2, ncol = 2, byrow = TRUE)
+```
+
+```{r}
+matrix(1:15, nrow = 3, ncol = 5, byrow = T)
+```
+

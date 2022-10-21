@@ -1,0 +1,50 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Fajrina Reski Arini
+
+NIM : 200803052
+
+# Struktur Keputusan
+
+```{r}
+#x = 123
+x = as.double(readline("masukkan nilai x : "))
+if(x%%2 == 0){
+  print('Genap')
+}else{
+  print('Ganjil')
+}
+
+if(x>0){
+  print('Positif')
+}else if(x == 0){
+  print('Netral')
+}else{
+  print('Negatif')
+}
+```
+# Looping/Perulangan
+```{r}
+for (i in seq(2,15,2)){
+    print(i)  
+}
+
+for(i in 1:15){
+  
+  print(i)
+  
+}
+```
+```{r}
+for(angka in 1:100){
+  if(angka %% 2 == 0){
+    print(sprintf("%3d = bilangan genap",angka))
+  }else{
+    print(sprintf("%3d = bilangan ganjil" ,angka))
+  }
+}
+```
+

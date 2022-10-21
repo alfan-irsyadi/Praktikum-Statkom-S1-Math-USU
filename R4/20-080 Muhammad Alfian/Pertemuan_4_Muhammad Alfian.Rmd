@@ -1,0 +1,50 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Muhammad Alfian
+
+NIM : 200803080
+
+# Pertemuan 4
+
+### Operator perbandingan
+
+```{r}
+x = 123
+if (x%%2){
+  print('genap')
+}else {
+  print("ganjil")
+}
+
+x = 12
+if (x > 0){
+  print('positif')
+}else if (x < 0){
+  print('negatif')
+}else{
+  print('nol')
+}
+```
+
+### Loop
+
+```{r}
+for (i in 1:5){
+  print(i)
+}
+for (i in c(2,4,6)){
+  print(i)
+}
+for (i in 1:20){
+  if (i%%2==0){
+    print(sprintf("%d = genap",i))
+  }
+  else{
+    print(sprintf("%d = ganjil",i))
+  }
+}
+
+```

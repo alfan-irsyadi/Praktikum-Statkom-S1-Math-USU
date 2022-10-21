@@ -1,0 +1,42 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+NAMA : JEAN PROBOSKY GINTING NIM : 200803078
+
+# Struktur Keputusan
+
+```{r}
+x=1
+if(x %%2==0) {
+  print('Genap')
+} else {
+  print ('Ganjil')
+}
+
+b=12
+if(b>0){
+  print ('Positif')
+} else if (b==0) {
+  print ('Netral')
+} else {
+   print ('Negatif')
+}
+```
+
+# Looping / Perulangan
+
+```{r}
+for (i in 1:5) {
+  print (i)
+}
+for (x in 1:20){
+if(x %%2==0) {
+    print(sprintf("%d=Genap",x))
+} else {
+  print(sprintf("%d=Ganjil",x))
+  
+}
+}
+```

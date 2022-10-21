@@ -1,0 +1,56 @@
+---
+title: "Pertemuan 4"
+output: html_notebook
+---
+
+Nama : Tarisa Azrina Tanaya
+
+NIM : 200803036
+
+# Struktur Keputusan
+
+```{r}
+# x = as.double(readline("masukkan nilai x : ")) #untuk membaca sebuah input, readline->string, angka di R itu double, as.double untuk mengubah string
+x = -6
+if(x%%2 == 0){
+   print('Genap')
+} else{                # harus 1 baris dengan kurang kurawal
+  print('Ganjil')
+}
+if(x>0){
+  print('Positif')
+} else if(x == 0){
+  print('netral')
+} else{
+  print('negatif')
+}
+```
+
+# Looping/Perulangan
+
+```{r}
+for(i in seq(2,15,2)){        #in -> elemen
+  print(i)
+}
+for(i in 1:15){
+  print(i)
+}
+
+print(sprintf("%d = ganjil", 1))    #sama seperti fprintf -> memakai %d
+cat(1, " = ganjil\n")               #memakai \n
+print(paste0(1, " = ganjil"))       #sama seperti cat tapi ga bisa pakai \n
+```
+
+```{r}
+for(i in 1:100){
+  if(i%%2 == 0){
+  print(paste0(i, " = Genap"))
+  #print(sprintf("%d = Genap", i))
+  #cat(i, "\t= Genap\n")
+} else{
+  print(paste0(i, " = Ganjil"))
+  #print(sprintf("%d = Ganjil", i))
+  #cat(i, "\t= Ganjil\n")
+}
+}
+```
